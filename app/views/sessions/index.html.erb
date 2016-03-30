@@ -1,5 +1,7 @@
 <% if current_user %>
-  Welcome <%= current_user.name %> <%= current_user.twitter.home_timeline %>
+  <h1>Welcome <%= current_user.name %> </h1>
+  <br>
+  <%= current_user.twitter.home_timeline %>
 <%= link_to "Sign Out", signout_path %>
 	<% else %>
 	  <%= link_to "Sign in with Twitter", "/auth/twitter" %>
