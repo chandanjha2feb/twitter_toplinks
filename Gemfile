@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -52,7 +53,7 @@ group :development do
 
   #deploying in heruku
   gem 'rails_12factor', group: :production
-  gem 'pg', '~> 0.18.4'
+  gem 'pg', '~> 0.18.4', group: :production
 
   ruby '2.2.3'
 end
